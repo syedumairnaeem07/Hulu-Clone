@@ -1,0 +1,33 @@
+.nav {
+	display: flex;
+	color: white;
+	overflow-x: scroll;
+	padding: 10px;
+	padding-left: 40px;
+}
+
+/* Hides scrollbar for Chrome, Safari and Opera */
+.nav::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hides scrollbar for IE, Edge and Firefox */
+.nav {
+	-ms-overflow-style: none; /*IE and Edge*/
+	scrollbar-width: none; /*Firefox*/
+}
+
+.nav > h2 {
+	cursor: pointer;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-weight: 500;
+	opacity: 0.7;
+	/* Transition is applied in the parent container targeting the child element transform  */
+	transition: transform 50ms ease-out;
+}
+
+.nav > h2:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
