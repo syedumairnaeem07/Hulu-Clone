@@ -1,0 +1,61 @@
+.header {
+	color: white;
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+	overflow-x: scroll;
+}
+
+/* Hides scrollbar for Chrome, Safari and Opera */
+.header::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hides scrollbar for IE, Edge and Firefox */
+.header {
+	-ms-overflow-style: none; /*IE and Edge*/
+	scrollbar-width: none; /*Firefox*/
+}
+
+.header__icons {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.header__icon {
+	display: flex;
+	flex-direction: column;
+	width: 100px; /* To create space B/W icons */
+	cursor: pointer;
+}
+
+.header__icon--active > p {
+	display: inline-flex !important;
+}
+
+.header__icon:hover > p {
+	display: inline-flex;
+}
+
+.header__icon > p {
+	display: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: small;
+}
+
+.header__icon > .MuiSvgIcon-root {
+	font-size: 30px;
+	/* auto actually centers an element by giving equal left and right margin */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header > img {
+	object-fit: contain;
+	height: 80px;
+}
